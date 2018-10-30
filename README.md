@@ -31,7 +31,7 @@ import ReactImage from 'react-image-wrapper';
   height={100}
 />
 ```  
-##### Output
+###### Output:
 ![Generated Avatar](https://image.ibb.co/kNwByL/riw-1.png)  
 
 **The Image can be styled with boxed or rounded images**
@@ -44,7 +44,7 @@ import ReactImage from 'react-image-wrapper';
   title="Rounded Image"
 />
 ```  
-##### Output
+###### Output:
 ![Generated Avatar](https://image.ibb.co/cjBN50/riw-2.png)  
 
 **Image stretch due to image size props can be avoided through ``keepAspectRatio`` prop**
@@ -56,7 +56,7 @@ import ReactImage from 'react-image-wrapper';
   keepAspectRatio={true}
 />
 ```  
-##### Output
+###### Output:
 ![Generated Avatar](https://image.ibb.co/gWEaQ0/riw-3.png)  
 
 **If source image fails to load then fallback source will load in image tag**
@@ -68,7 +68,7 @@ import ReactImage from 'react-image-wrapper';
   height={100}
 />
 ```  
-##### Output
+###### Output:
 ![Generated Avatar](https://image.ibb.co/dBhek0/riw-4.png)  
 
 **If source of image tag and fallback source both fails to load then avatar will render through the title of image. The avatar image is customizable through ``avatarOptions``**
@@ -90,7 +90,7 @@ import ReactImage from 'react-image-wrapper';
   }
 />
 ```  
-##### Output
+###### Output:
 ![Generated Avatar](https://image.ibb.co/gtVAsf/riw-5.png)  
 
 ### Props
@@ -100,12 +100,14 @@ import ReactImage from 'react-image-wrapper';
 | fallbackSrc | String | URL of Image which needs to render if image URL in src tag fails to render in img tag. |
 | width |  Integer | The width of the image you want to set. |
 | height |  Integer | The height of the image you want to set. |
-| shape | String | The shape of image. |
+| shape | String | The shape of image. Available options are [`round`, `box`] |
 | keepAspectRatio | Boolean | Set keepAspect Ratio to `true` to avoid image stretch due to provided width/height of image  |
 | title |  String | Title of Image which appears in image tooltip and in case of failed/unavailable fallback source it render the avatar and shows 2 letters of title in it for example, if the title is `Ahsan Bilal` the avatar will show `AB` and if the title is ``Ryan`` then it will show `Ry`.  |
 | id |  String | ID attribute for image tag |
 | className |  String | Class attribute for image tag |
 | avatarOptions | Object | Additional props to configure avatar properties |
+
+
 
 ## License
 ReactImageWrapper is released under MIT license

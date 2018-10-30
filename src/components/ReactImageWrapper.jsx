@@ -12,7 +12,7 @@ const STATUS = {
 }
 
 const IMAGE_SHAPE = {
-  CIRCLE: 'circle'
+  ROUND: 'round'
 }
 
 class ReactImageWrapperComponent extends Component {
@@ -29,7 +29,7 @@ class ReactImageWrapperComponent extends Component {
     avatarOptions: {
       color: '#FFFFFF',
       backgroundColor: '#CCCCCC',
-      shape: 'circle'
+      shape: 'round'
     }
   }
   constructor(props) {
@@ -68,7 +68,7 @@ class ReactImageWrapperComponent extends Component {
         onError={() => this.changeImageSrc()}
         id={this.props.id}
         className={`${this.props.className} ${
-          this.props.shape === IMAGE_SHAPE.CIRCLE ? styles[IMAGE_SHAPE.CIRCLE] : ''
+          this.props.shape === IMAGE_SHAPE.ROUND ? styles[IMAGE_SHAPE.ROUND] : ''
         }
         ${
           this.props.keepAspectRatio ? styles.keepAspectRatio : ''

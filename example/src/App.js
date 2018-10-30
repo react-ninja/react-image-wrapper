@@ -18,8 +18,8 @@ export default class App extends Component {
           src="https://preview.ibb.co/hqhoyA/lexie-barnhorn-1114350-unsplash.jpg"
           width={100}
           height={100}
-          shape="circle"
-          title="Circular Image"
+          shape="round"
+          title="Rounded Image"
         />
 
         <h3>To avoid image stretch due to image size, you can use the ``keepAspectRatio`` prop</h3>
@@ -28,7 +28,6 @@ export default class App extends Component {
           width={100}
           height={100}
           keepAspectRatio={true}
-          title="Circular Image"
         />
 
         <h3>if source image fails to load then fallback source will load in image tag</h3>

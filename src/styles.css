@@ -4,6 +4,6 @@ img.keepAspectRatio {
   object-fit: cover;
 }
 
-img.circle {
+img.round {
   border-radius: 100%;
 }

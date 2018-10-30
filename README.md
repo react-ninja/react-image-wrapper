@@ -100,13 +100,19 @@ import ReactImage from 'react-image-wrapper';
 | fallbackSrc | String | URL of Image which needs to render if image URL in src tag fails to render in img tag. |
 | width |  Integer | The width of the image you want to set. |
 | height |  Integer | The height of the image you want to set. |
-| shape | String | The shape of image. Available options are [`round`, `box`] |
+| shape | String('round','box') | The shape of image. |
 | keepAspectRatio | Boolean | Set keepAspect Ratio to `true` to avoid image stretch due to provided width/height of image  |
 | title |  String | Title of Image which appears in image tooltip and in case of failed/unavailable fallback source it render the avatar and shows 2 letters of title in it for example, if the title is `Ahsan Bilal` the avatar will show `AB` and if the title is ``Ryan`` then it will show `Ry`.  |
 | id |  String | ID attribute for image tag |
 | className |  String | Class attribute for image tag |
 | avatarOptions | Object | Additional props to configure avatar properties |
 
+#### avatarOptions
+| Name | Type | Description |
+| --- | --- | --- |
+| color | String(hex) | URL of Image which needs to render in image tag. |
+| backgroundColor | String(hex) | Background color of the avatar. The component assigns particular color to each letter. If you want to override the color then set this property. |
+| shape |  String('round','box') | The shape of avatar. |
 
 
 ## License
